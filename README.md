@@ -4,10 +4,26 @@
 ## Hugging Face Tutorials
 
 ### Create data
+
+Manually upload data from UX or from API.
+
+* [Create your own dataset Reference](https://huggingface.co/course/chapter5/5?fw=pt)
+
+
+To load do the following:
+
+```
+from datasets import load_dataset
+remote_dataset = load_dataset("noahgift/social-power-nba")
+remote_dataset
+```
+
 ### Create model
+
+* [Sharing a model](https://huggingface.co/course/chapter4/3?fw=pt)
+* [Creating a model card](https://huggingface.co/course/chapter4/4?fw=pt)
+
 ### Create spaces
-
-
 
 
 ### Verify GPU works
