@@ -10,10 +10,10 @@ test:
 	python -m pytest -vv --cov=main --cov=mylib test_*.py
 
 format:	
-	black *.py 
+	black *.py hugging-face/*.py hugging-face/gradio-demos/*.py
 
 lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py *.py mylib/*.py
+	pylint --disable=R,C --ignore-patterns=test_.*?py *.py mylib/*.py hugging-face/*.py hugging-face/**/*.py
 
 container-lint:
 	docker run --rm -i hadolint/hadolint < Dockerfile

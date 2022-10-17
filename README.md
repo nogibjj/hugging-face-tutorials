@@ -17,13 +17,29 @@ from datasets import load_dataset
 remote_dataset = load_dataset("noahgift/social-power-nba")
 remote_dataset
 ```
+#### Recommended Tutorial Followup
+
+1.  Find a simple and small dataset: kaggle, your own, a sample dataset
+2.  Go to Hugging Face website and upload
+3.  Download and explore dataset
+4.  Enhance dataset by filling out dataset metadata.
+5.  Build a Demo for it.
+
 
 ### Create model
 
 * [Sharing a model](https://huggingface.co/course/chapter4/3?fw=pt)
 * [Creating a model card](https://huggingface.co/course/chapter4/4?fw=pt)
 
+#### Recommended Tutorial Followup
+
+1. Upload model to Hugging Face website
+2. Fill out model card
+3. Use model
+
 ### Create spaces
+
+
 
 
 ### Verify GPU works
