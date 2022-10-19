@@ -36,15 +36,35 @@ remote_dataset
 2. Fill out model card
 3. Use model
 
-
 ### Fine-Tuning Hugging Face Models Tutorial
 
 Why transfer learning?
 
 ![10-7-transformers](https://user-images.githubusercontent.com/58792/196711699-8034d017-a2bb-4ec3-8029-04c925cbf254.png)
 
+* One batch in PyTorch
+* Using sacrebleu (precision based "Precision (also called positive predictive value) is the fraction of relevant instances among the retrieved instances").  Recall is "while recall (also known as sensitivity) is the fraction of relevant instances that were retrieved" - wikipedia
+* The ROUGE score was specifically developed for applications like summarization where high recall is more important than just precision! 
+```python
+rouge_metric = load_metric("rouge")
+```
 
-* [Refer]
+
+```python
+from datasets import load_metric
+bleu_metric = load_metric("sacrebleu")
+```
+
+
+
+
+### Push to Hub
+
+* Need token and [follow guide](https://huggingface.co/docs/transformers/model_sharing)
+
+
+
+* [Refer to HuggingFace course](https://huggingface.co/course/chapter3/2?fw=pt)
 
 
 
@@ -82,6 +102,10 @@ Used as the base and customized in the following Duke MLOps and Applied Data Eng
 
 ### References
 
+* [nlp-with-transformers
+/
+notebooks
+](https://github.com/nlp-with-transformers/notebooks)
 * [Natural Language Processing with Transformers, Revised Edition](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
 * [Building Cloud Computing Solutions at Scale Specialization](https://www.coursera.org/specializations/building-cloud-computing-solutions-at-scale)
 * [Python, Bash and SQL Essentials for Data Engineering Specialization](https://www.coursera.org/learn/web-app-command-line-tools-for-data-engineering-duke)

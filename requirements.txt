@@ -32,6 +32,9 @@ databricks-sql-connector==2.1.0
 transformers==4.22.2
 datasets==2.5.2
 tokenizers==0.12.1
+nltk==3.7
+rouge-score==0.1.2
+py7zr==0.20.0
 #deep learning
 torch==1.12.1
 torchvision==0.13.1
