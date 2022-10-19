@@ -61,11 +61,9 @@ bleu_metric = load_metric("sacrebleu")
 ### Push to Hub
 
 * Need token and [follow guide](https://huggingface.co/docs/transformers/model_sharing)
-
-
-
 * [Refer to HuggingFace course](https://huggingface.co/course/chapter3/2?fw=pt)
 
+use `huggingface-cli login` and pass in your token
 
 
 ### Create spaces

@@ -2,6 +2,7 @@
 summarizeApp
 #ignore fine-tuning
 test_trainer/
+hugging-face/test-trainer/
 
 #ignore pytorch artifacts
 data
