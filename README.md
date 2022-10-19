@@ -41,6 +41,9 @@ remote_dataset
 
 Why transfer learning?
 
+![10-7-transformers](https://user-images.githubusercontent.com/58792/196711699-8034d017-a2bb-4ec3-8029-04c925cbf254.png)
+
+
 * [Refer]
 
 
