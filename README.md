@@ -9,7 +9,6 @@ Manually upload data from UX or from API.
 
 * [Create your own dataset Reference](https://huggingface.co/course/chapter5/5?fw=pt)
 
-
 To load do the following:
 
 ```
@@ -36,6 +35,15 @@ remote_dataset
 1. Upload model to Hugging Face website
 2. Fill out model card
 3. Use model
+
+
+### Fine-Tuning Hugging Face Models Tutorial
+
+Why transfer learning?
+
+* [Refer]
+
+
 
 ### Create spaces
 
@@ -68,8 +76,10 @@ Used as the base and customized in the following Duke MLOps and Applied Data Eng
 * [MLOps-C2-Final-HuggingFace](https://github.com/nogibjj/Coursera-MLOps-C2-Final-HuggingFace)
 * [Coursera-MLOps-C2-lab3-probability-simulations](Coursera-MLOps-C2-lab3-probability-simulations)
 * [Coursera-MLOps-C2-lab4-greedy-optimization](https://github.com/nogibjj/Coursera-MLOps-C2-lab4-greedy-optimization)
+
 ### References
 
+* [Natural Language Processing with Transformers, Revised Edition](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
 * [Building Cloud Computing Solutions at Scale Specialization](https://www.coursera.org/specializations/building-cloud-computing-solutions-at-scale)
 * [Python, Bash and SQL Essentials for Data Engineering Specialization](https://www.coursera.org/learn/web-app-command-line-tools-for-data-engineering-duke)
 * [Implementing MLOps in the Enterprise](https://learning.oreilly.com/library/view/implementing-mlops-in/9781098136574/)
