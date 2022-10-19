@@ -24,6 +24,20 @@ remote_dataset
 4.  Enhance dataset by filling out dataset metadata.
 5.  Build a Demo for it.
 
+#### Generally useful skills
+
+Use the `huggingface-cli`
+```bash
+(venv) @noahgift ➜ /workspaces/hugging-face-tutorials (GPU) $ huggingface-cli scan-cache
+REPO ID                      REPO TYPE SIZE ON DISK NB FILES LAST_ACCESSED LAST_MODIFIED REFS LOCAL PATH                                                                   
+---------------------------- --------- ------------ -------- ------------- ------------- ---- ---------------------------------------------------------------------------- 
+bert-base-cased              model           436.4M        5 2 days ago    2 days ago    main /home/codespace/.cache/huggingface/hub/models--bert-base-cased               
+bert-base-uncased            model           441.2M        5 2 hours ago   2 hours ago   main /home/codespace/.cache/huggingface/hub/models--bert-base-uncased             
+google/pegasus-cnn_dailymail model             1.9M        4 1 hour ago    1 hour ago    main /home/codespace/.cache/huggingface/hub/models--google--pegasus-cnn_dailymail 
+gpt2                         model           551.0M        5 2 days ago    2 days ago    main /home/codespace/.cache/huggingface/hub/models--gpt2                          
+gpt2-xl                      model             6.4G        5 1 hour ago    1 hour ago    main /home/codespace/.cache/huggingface/hub/models--gpt2-xl  
+```
+
 
 ### Create model
 
@@ -54,9 +68,6 @@ rouge_metric = load_metric("rouge")
 from datasets import load_metric
 bleu_metric = load_metric("sacrebleu")
 ```
-
-
-
 
 ### Push to Hub
 
