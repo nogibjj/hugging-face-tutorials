@@ -1,3 +1,4 @@
+# pylint: skip-file
 """Fine tune example modified from Hugging Face O'Reilly book"""
 
 

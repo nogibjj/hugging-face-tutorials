@@ -1,3 +1,4 @@
+# pylint: skip-file
 import gradio as gr
 import pandas as pd
 

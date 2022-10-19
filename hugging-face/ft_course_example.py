@@ -29,8 +29,8 @@ model = AutoModelForSequenceClassification.from_pretrained(checkpoint, num_label
 def compute_metrics(eval_preds):
     metric = evaluate.load("glue", "mrpc")
     logits, labels = eval_preds
-    predictions = np.argmax(logits, axis=-1)
-    return metric.compute(predictions=predictions, references=labels)
+    prediction = np.argmax(logits, axis=-1)
+    return metric.compute(predictions=prediction, references=labels)
 
 trainer = Trainer(
     model,
@@ -43,10 +43,10 @@ trainer = Trainer(
 )
 
 #evaluation metric
-metric = evaluate.load("glue", "mrpc")
+metrics = evaluate.load("glue", "mrpc")
 predictions = trainer.predict(tokenized_datasets["validation"])
 preds = np.argmax(predictions.predictions, axis=-1)
-metric.compute(predictions=preds, references=predictions.label_ids)
+metrics.compute(predictions=preds, references=predictions.label_ids)
 
 
 #run the training
