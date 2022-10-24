@@ -5,6 +5,10 @@
 
 ### Push model
 
+![fine-tune](https://user-images.githubusercontent.com/58792/197589124-3a1b7d38-f5e8-41e7-a49d-ba51a90312ca.png)
+
+
+
 Follow steps in guide:  https://huggingface.co/docs/transformers/training
 
 1. Login:
