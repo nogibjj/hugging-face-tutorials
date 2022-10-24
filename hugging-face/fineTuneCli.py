@@ -13,6 +13,7 @@ from transformers import TrainingArguments, Trainer
 import numpy as np
 import click
 
+REPO="hf_fine_tune_hello_world_large"
 
 def tokenize_function(examples):
     """Tokenize Function"""
@@ -43,10 +44,10 @@ def compute_metrics(eval_pred):
 def train_model(model, tokenized_datasets):
 
     training_args = TrainingArguments(
-        output_dir="hf_fine_tune_hello_world",
+        output_dir=REPO,
         evaluation_strategy="epoch",
         push_to_hub=True,
-        push_to_hub_model_id="hf_fine_tune_hello_world",
+        push_to_hub_model_id=REPO,
     )
     trainer = Trainer(
         model=model,
@@ -69,7 +70,7 @@ def main():
     trainer = train_model(model, tokenized_datasets)
     trainer.train()
     trainer.push_to_hub()
-    tokenizer.push_to_hub(repo_id="hf_fine_tune_hello_world")
+    tokenizer.push_to_hub(repo_id=REPO)
 
 
 if __name__ == "__main__":
