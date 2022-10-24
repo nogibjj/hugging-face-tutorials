@@ -3,6 +3,23 @@
 
 ## Hugging Face Tutorials
 
+### Push model
+
+Follow steps in guide:  https://huggingface.co/docs/transformers/training
+
+1. Login:
+
+* `huggingface-cli login`
+
+If you get output about `Authenticated through git-credential store but this isn't the helper defined on your machine.`, then follow the instructions to fix.
+
+Tip:  You can get your token from [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) and it needs to be a WRITE token.
+
+2.  Run `python hugging-face/hf_fine_tune_hello_world.py`
+
+
+
+
 ### Create data
 
 Manually upload data from UX or from API.

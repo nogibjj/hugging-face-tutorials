@@ -45,7 +45,10 @@ small_eval_dataset = tokenized_datasets["test"].shuffle(seed=42).select(range(10
 
 
 training_args = TrainingArguments(
-    output_dir="test_trainer", evaluation_strategy="epoch"
+    output_dir="hf_fine_tune_hello_world",
+    evaluation_strategy="epoch",
+    push_to_hub=True,
+    push_to_hub_model_id="hf_fine_tune_hello_world",
 )
 trainer = Trainer(
     model=model,
@@ -55,4 +58,6 @@ trainer = Trainer(
     compute_metrics=compute_metrics,
 )
 
-trainer.train()  # train the model
+trainer.train()         # train the model
+trainer.push_to_hub()   # push the model to huggingface hub
+tokenizer.push_to_hub(repo_id="hf_fine_tune_hello_world") # push the tokenizer to huggingface hub

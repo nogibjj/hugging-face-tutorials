@@ -10,4 +10,4 @@ df = df["train"].to_pandas()
 df.dropna(axis=0, inplace=True)
 
 
-#gr.Interface.load("huggingface/scikit-learn/tabular-playground", title=title, description=description).launch()
+# gr.Interface.load("huggingface/scikit-learn/tabular-playground", title=title, description=description).launch()
