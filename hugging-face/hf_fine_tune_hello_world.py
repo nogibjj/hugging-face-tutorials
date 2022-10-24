@@ -58,6 +58,8 @@ trainer = Trainer(
     compute_metrics=compute_metrics,
 )
 
-trainer.train()         # train the model
-trainer.push_to_hub()   # push the model to huggingface hub
-tokenizer.push_to_hub(repo_id="hf_fine_tune_hello_world") # push the tokenizer to huggingface hub
+trainer.train()  # train the model
+trainer.push_to_hub()  # push the model to huggingface hub
+tokenizer.push_to_hub(
+    repo_id="hf_fine_tune_hello_world"
+)  # push the tokenizer to huggingface hub
